@@ -1,0 +1,12 @@
+name: Hallo Welt
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  sag-hallo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gib eine Nachricht aus
+        run: echo "🎉 Hallo Welt! Meine erste GitHub Action funktioniert!"
